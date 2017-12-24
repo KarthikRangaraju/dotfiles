@@ -61,7 +61,12 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Tmuxinator configurations
+# Note that you have to download the tmuxinator.zsh file from github repo and drop it in ~/.bin/ directory
 source ~/.bin/tmuxinator.zsh
+export EDITOR='vim'
+export DISABLE_AUTO_TITLE=true
 
 # User configuration
 
