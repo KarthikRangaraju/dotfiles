@@ -73,7 +73,7 @@ export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
 
 # Custom keybindings
-source ~/dotfiles/custom_key_bindings.sh
+source ~/dotfiles/zsh/key_bindings.sh
 
 # Custom cd function
 customCd() {
@@ -83,7 +83,7 @@ customCd() {
 
 alias cd="customCd"
 
-
+source ~/dotfiles/zsh/prompt.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
