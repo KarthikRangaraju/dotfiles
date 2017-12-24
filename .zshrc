@@ -72,6 +72,9 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
 
+# Custom keybindings
+source ~/dotfiles/custom_key_bindings.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
