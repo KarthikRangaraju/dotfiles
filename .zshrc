@@ -58,13 +58,15 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+git
+tmuxinator
+vi-mode
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # Tmuxinator configurations
-# Note that you have to download the tmuxinator.zsh file from github repo and drop it in ~/.bin/ directory
-source ~/.bin/tmuxinator.zsh
 export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
 
