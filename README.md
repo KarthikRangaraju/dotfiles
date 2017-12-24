@@ -3,3 +3,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 
 To install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+To make sure tmux buffer gets copied to system clipboard, install: 
+sudo apt-get install --assume-yes xclip
+
+Refer: http://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/

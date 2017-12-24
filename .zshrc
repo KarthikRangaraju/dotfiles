@@ -78,7 +78,7 @@ source ~/dotfiles/custom_key_bindings.sh
 # Custom cd function
 customCd() {
 	cd $1;
-	ls;
+	ls -Al;
     }
 
 alias cd="customCd"
