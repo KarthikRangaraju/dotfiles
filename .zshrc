@@ -75,6 +75,15 @@ export DISABLE_AUTO_TITLE=true
 # Custom keybindings
 source ~/dotfiles/custom_key_bindings.sh
 
+# Custom cd function
+customCd() {
+	cd $1;
+	ls;
+    }
+
+alias cd="customCd"
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
