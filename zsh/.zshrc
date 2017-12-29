@@ -78,7 +78,7 @@ source ~/dotfiles/zsh/key_bindings.sh
 # Custom cd function
 customCd() {
 	cd $1;
-	ls -Al;
+	ls -A;
     }
 
 alias cd="customCd"
