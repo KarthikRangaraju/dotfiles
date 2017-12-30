@@ -14,3 +14,5 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 
 Installing fonts for powerlevel9k to work
 https://github.com/powerline/fonts
+
+Make sure you choose a powerline font in your terminal.
