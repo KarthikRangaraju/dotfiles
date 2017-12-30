@@ -12,7 +12,6 @@ Refer: http://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about
 Installing powerlevel9k theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-Installing fonts for powerlevel9k to work
-https://github.com/powerline/fonts
+Install the SourceCodePro PowerlineAwesomeRegular font included in this repo into your OS.
+Make sure you choose SoureCodePro PowerlineAwesomeRegular font in your terminal.
 
-Make sure you choose a powerline font in your terminal.
