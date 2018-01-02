@@ -117,6 +117,8 @@ customCd() {
 
 alias cd="customCd"
 alias ls="ls -A"
+alias mux="tmuxinator"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
