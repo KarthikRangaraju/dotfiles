@@ -116,7 +116,7 @@ customCd() {
     }
 
 alias cd="customCd"
-alias ls="ls -A"
+alias ls="ls -AG"
 alias mux="tmuxinator"
 
 # User configuration
