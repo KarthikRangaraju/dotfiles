@@ -15,3 +15,6 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 Install the SourceCodePro PowerlineAwesomeRegular font included in this repo into your OS.
 Make sure you choose SoureCodePro PowerlineAwesomeRegular font in your terminal.
 
+Note:
+brew install reattach-to-user-namespace 
+to make sure pbcopy works on MacOS Sierra
