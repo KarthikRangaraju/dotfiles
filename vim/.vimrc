@@ -3,3 +3,4 @@ syntax on
 :imap ii <Esc>
 " Allow backspace to delete characters
 :set backspace=indent,eol,start
+set clipboard=unnamed
