@@ -1,4 +1,12 @@
+1. git clone dotfiles in home directory. 
+2. echo "source ~/dotfiles/tmux/.tmux.conf" > ~/.tmux.conf
+3. echo "source ~/dotfiles/zsh/.zshrc" > ~/.zshrc
+4. echo "source ~/dotfiles/vim/.vimrc" > ~/.vimrc
+
+Install oh-my-zsh via curl: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 To install zsh-autosuggestions plugin 
+
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 To install zsh-syntax-highlighting
