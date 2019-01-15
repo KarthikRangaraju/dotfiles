@@ -26,3 +26,6 @@ Make sure you choose SoureCodePro PowerlineAwesomeRegular font in your terminal.
 Note:
 brew install reattach-to-user-namespace 
 to make sure pbcopy works on MacOS Sierra
+
+IntelliJ & Iterm: Use Menlo font. Size 12. 
+To make intellij's IdeaVim use the same vim configuration, do echo "source ~/dotfiles/vim/.vimrc" > ~/.ideavimrc
