@@ -41,12 +41,12 @@
 	bindkey "^e" edit_and_run
 
 # LS
-	function ctrl_l() {
-		BUFFER="ls"
+	function ctrl_f() {
+		BUFFER="history | fzf"
 		zle accept-line
 	}
-	zle -N ctrl_l
-	bindkey "^l" ctrl_l
+	zle -N ctrl_f
+	bindkey "^f" ctrl_f
 
 # Sudo
 	function add_sudo() {
