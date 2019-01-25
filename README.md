@@ -30,4 +30,7 @@ to make sure pbcopy works on MacOS Sierra
 IntelliJ & Iterm: Use Menlo font. Size 12. 
 To make intellij's IdeaVim use the same vim configuration, do echo "source ~/dotfiles/vim/.vimrc" > ~/.ideavimrc
 
+Install fuzzy finder + setup useful keybindings and fuzzy completions:
 brew install fzf
+$(brew --prefix)/opt/fzf/install
+
