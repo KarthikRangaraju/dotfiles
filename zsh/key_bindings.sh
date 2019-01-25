@@ -40,14 +40,6 @@
 	zle -N edit_and_run
 	bindkey "^e" edit_and_run
 
-# LS
-	function ctrl_f() {
-		BUFFER="history | fzf"
-		zle accept-line
-	}
-	zle -N ctrl_f
-	bindkey "^f" ctrl_f
-
 # Sudo
 	function add_sudo() {
 		BUFFER="sudo "$BUFFER
