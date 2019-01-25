@@ -61,6 +61,7 @@ export DEFAULT_USER="$USER"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
 git
 tmuxinator
@@ -87,6 +88,9 @@ customCd() {
 alias cd="customCd"
 alias ls="ls -AG"
 alias mux="tmuxinator"
+
+# Fuzzy finder 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # User configuration
 
@@ -115,4 +119,3 @@ alias mux="tmuxinator"
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
