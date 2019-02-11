@@ -10,12 +10,12 @@
 	function git_prepare() {
 		if [ -n "$BUFFER" ];
 			then
-				BUFFER="git add -A; git commit -m \"$BUFFER\" && git push"
+				BUFFER="git add -A; git commit -m \"$BUFFER\" && git push origin $(git rev-parse --abbrev-ref HEAD)"
 		fi
 
 		if [ -z "$BUFFER" ];
 			then
-				BUFFER="git add -A; git commit -v && git push"
+				BUFFER="git add -A; git commit -v && git push origin $(git rev-parse --abbrev-ref HEAD)"
 		fi
 				
 		zle accept-line
@@ -40,10 +40,3 @@
 	zle -N edit_and_run
 	bindkey "^e" edit_and_run
 
-# Sudo
-	function add_sudo() {
-		BUFFER="sudo "$BUFFER
-		zle end-of-line
-	}
-	zle -N add_sudo
-	bindkey "^s" add_sudo
