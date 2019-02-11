@@ -32,11 +32,8 @@
 	zle -N goto_home
 	bindkey "^h" goto_home
 
-# Edit and rerun
-	function edit_and_run() {
-		BUFFER="fc"
-		zle accept-line
-	}
-	zle -N edit_and_run
-	bindkey "^e" edit_and_run
+# Enable Ctrl-e to edit command line
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^e' edit-command-line
 
