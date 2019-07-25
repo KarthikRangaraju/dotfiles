@@ -79,15 +79,41 @@ export DISABLE_AUTO_TITLE=true
 # Custom keybindings
 source ~/dotfiles/zsh/key_bindings.sh
 
-# Custom cd function
-customCd() {
-	cd $1;
-	ls -A;
-    }
-
-alias cd="customCd"
 alias ls="ls -AG"
 alias mux="tmuxinator"
+
+# Navigation like browser
+
+export BACK_HISTORY=""
+export FORWARD_HISTORY=""
+
+function cd {
+    BACK_HISTORY=$PWD:$BACK_HISTORY
+    FORWARD_HISTORY=""
+    builtin cd "$@"
+    ls -A;
+}
+
+function back {
+    DIR=${BACK_HISTORY%%:*}
+    if [[ -d "$DIR" ]]
+    then
+        BACK_HISTORY=${BACK_HISTORY#*:}
+        FORWARD_HISTORY=$PWD:$FORWARD_HISTORY
+        builtin cd "$DIR"
+    fi
+}
+
+function forward {
+    DIR=${FORWARD_HISTORY%%:*}
+    if [[ -d "$DIR" ]]
+    then
+        FORWARD_HISTORY=${FORWARD_HISTORY#*:}
+        BACK_HISTORY=$PWD:$BACK_HISTORY
+        builtin cd "$DIR"
+    fi
+}
+
 
 # Fuzzy finder 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

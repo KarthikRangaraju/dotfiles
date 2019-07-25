@@ -1,11 +1,3 @@
-# up
-	function up_widget() {
-		BUFFER="cd .."
-		zle accept-line
-	}
-	zle -N up_widget
-	bindkey "^u" up_widget
-
 # git
 	function git_prepare() {
 		if [ -n "$BUFFER" ];
@@ -31,6 +23,26 @@
 	}
 	zle -N goto_home
 	bindkey "^h" goto_home
+
+# cmd + left arrow
+        
+	function left_arrow() { 
+		BUFFER="back"$BUFFER
+		zle end-of-line
+		zle accept-line
+	}
+	zle -N left_arrow 
+	bindkey "^[[1;9D" left_arrow 
+
+# cmd + right arrow
+        
+	function right_arrow() { 
+		BUFFER="forward"$BUFFER
+		zle end-of-line
+		zle accept-line
+	}
+	zle -N right_arrow
+	bindkey "^[[1;9C" right_arrow 
 
 # Enable Ctrl-e to edit command line
 autoload -U edit-command-line
