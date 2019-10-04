@@ -3,6 +3,11 @@
 3. echo "source ~/dotfiles/zsh/.zshrc" > ~/.zshrc
 4. echo "source ~/dotfiles/vim/.vimrc" > ~/.vimrc
 
+Install tmux: 
+brew install https://raw.githubusercontent.com/Homebrew/brew/2d2034afc6e4dfab0a1c48f5edd2c5478576293b/Formula/tmux.rb
+installs an older tmux version which is compatible with tmuxinator
+
+
 Install oh-my-zsh via curl: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 To install zsh-autosuggestions plugin 
