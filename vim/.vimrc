@@ -4,3 +4,4 @@ syntax on
 " Allow backspace to delete characters
 :set backspace=indent,eol,start
 set clipboard=unnamed
+set mouse-=a
