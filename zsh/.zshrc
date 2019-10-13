@@ -118,6 +118,9 @@ function forward {
 # Fuzzy finder 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Start tmux session for every new tab. 
+tmux
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
