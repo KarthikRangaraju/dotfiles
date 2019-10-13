@@ -71,5 +71,12 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g "" 2> /dev/null'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g "" 2> /dev/null'
 
+# Disable Ctrl+d from exiting the shell. It's typically used for going down while reading text.
+setopt ignore_eof
+
+# If a new command line being added to the history list duplicates an older one, the older command is removed from the list (even if it is not the previous event). This helps with fzf history search not being cluttered too much
+setopt HIST_IGNORE_ALL_DUPS
+
 # Start tmux session for every new tab. 
 tmux
+
