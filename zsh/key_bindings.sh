@@ -43,9 +43,3 @@
 	}
 	zle -N right_arrow
 	bindkey "^[[1;9C" right_arrow 
-
-# Enable Ctrl-e to edit command line
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey '^e' edit-command-line
-
