@@ -32,7 +32,7 @@
 		zle accept-line
 	}
 	zle -N left_arrow 
-	bindkey "^[[1;9D" left_arrow 
+	bindkey "^b" left_arrow 
 
 # cmd + right arrow
         
@@ -42,4 +42,4 @@
 		zle accept-line
 	}
 	zle -N right_arrow
-	bindkey "^[[1;9C" right_arrow 
+	bindkey "^f" right_arrow 
