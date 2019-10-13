@@ -24,7 +24,45 @@ export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
 
 # Custom keybindings
-source ~/dotfiles/zsh/key_bindings.sh
+function git_prepare() {
+if [ -n "$BUFFER" ];
+then
+BUFFER="git add -A; git commit -m \"$BUFFER\" && git push origin $(git rev-parse --abbrev-ref HEAD)"
+fi
+
+if [ -z "$BUFFER" ];
+then
+BUFFER="git add -A; git commit -v && git push origin $(git rev-parse --abbrev-ref HEAD)"
+fi
+
+zle accept-line
+}
+zle -N git_prepare
+bindkey "^g" git_prepare
+
+function goto_home() {
+BUFFER="cd ~/"$BUFFER
+zle end-of-line
+zle accept-line
+}
+zle -N goto_home
+bindkey "^h" goto_home
+
+function left_arrow() {
+BUFFER="back"$BUFFER
+zle end-of-line
+zle accept-line
+}
+        zle -N left_arrow
+        bindkey "^H" left_arrow
+
+function right_arrow() {
+BUFFER="forward"$BUFFER
+zle end-of-line
+zle accept-line
+}
+zle -N right_arrow
+bindkey "^L" right_arrow
 
 # Aliases
 alias ls="ls -AG"
