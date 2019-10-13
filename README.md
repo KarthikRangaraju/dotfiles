@@ -39,3 +39,7 @@ Install fuzzy finder + setup useful keybindings and fuzzy completions:
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 
+TODO list:
+- Vim select is messed up when inside tmux pane. 
+- Vim copy to clipboard directly instead of vim buffer. 
+- Tmux setup for ssh-ing to different environments. 
