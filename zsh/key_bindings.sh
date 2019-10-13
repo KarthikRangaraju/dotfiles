@@ -32,7 +32,7 @@
 		zle accept-line
 	}
 	zle -N left_arrow 
-	bindkey "^b" left_arrow 
+	bindkey "^H" left_arrow 
 
 # cmd + right arrow
         
@@ -42,4 +42,4 @@
 		zle accept-line
 	}
 	zle -N right_arrow
-	bindkey "^f" right_arrow 
+	bindkey "^L" right_arrow 
