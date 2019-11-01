@@ -99,6 +99,10 @@ function forward {
     fi
 }
 
+function docker_exec {
+docker exec -it $(docker ps | grep $1 | awk '{print $1}') bash
+}
+
 
 # Fuzzy finder 
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
@@ -115,6 +119,6 @@ setopt ignore_eof
 # If a new command line being added to the history list duplicates an older one, the older command is removed from the list (even if it is not the previous event). This helps with fzf history search not being cluttered too much
 setopt HIST_IGNORE_ALL_DUPS
 
+
 # Start tmux session for every new tab. 
 tmux
-

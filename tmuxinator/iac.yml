@@ -52,4 +52,5 @@ windows:
   - docker-images: cd docker-images && clear
   - docker-base-images: cd docker-base-images && clear
   - infrastructure: cd iac && clear
-  - misc: echo "Have a great day Karthik!"
+  - jenkins: cd docker-jenkins && clear
+  - helm-charts: cd helm-charts && clear
